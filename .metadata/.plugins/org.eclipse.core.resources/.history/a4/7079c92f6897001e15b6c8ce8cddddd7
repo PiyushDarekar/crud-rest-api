@@ -1,0 +1,30 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentRepo;
+
+@Service
+public class StudentService {
+	StudentRepo studentRepo;
+
+//	public StudentService(StudentRepo studentRepo) {
+//		this.studentRepo = studentRepo;
+//	}
+	
+	public List<Student> findAllStudents(){
+		return studentRepo.findAll();
+	}
+	public Student findStudentById(Long id) {
+		return studentRepo.findById(id).get();
+	}
+	public Student addStudent(Student student) {
+		return studentRepo.save(student);
+	}
+	public Student updateStudentInfo(Long id,Student student) {
+		return studentRepo.
+	}
+}

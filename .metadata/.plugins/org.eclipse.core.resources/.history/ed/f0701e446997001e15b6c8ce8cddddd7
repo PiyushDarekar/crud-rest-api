@@ -1,0 +1,16 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.service.StudentService;
+
+@RestController
+public class StudentController {
+	StudentService studentService;
+
+//	public StudentController(StudentService studentService) {
+//		super();
+//		this.studentService = studentService;
+//	}
+	
+}
